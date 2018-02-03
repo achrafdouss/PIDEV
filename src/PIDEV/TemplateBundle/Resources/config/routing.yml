@@ -1,0 +1,6 @@
+pidev_template_homepage:
+    path:     /
+    defaults: { _controller: PIDEVTemplateBundle:Default:index }
+layout:
+    path:     /layout
+    defaults: { _controller: PIDEVTemplateBundle:Default:Dashboard }

@@ -1,3 +1,7 @@
+pidev_template:
+    resource: "@PIDEVTemplateBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
