@@ -4,6 +4,9 @@ parameters:
     #parameter_name: value
 
 services:
+  redirect.after.login:
+    class: PIDEV\UserBundle\Redirection\AfterLoginRedirection
+    arguments: ["@router"]
     # default configuration for services in *this* file
     _defaults:
         # automatically injects dependencies in your services
@@ -28,6 +31,10 @@ services:
         resource: '../../src/AppBundle/Controller'
         public: true
         tags: ['controller.service_arguments']
+    authentication_handler:
+        class: PIDEV\UserBundle\PIDEVUserBundle
+        public: false
+        arguments: ["@router","@session"]
 
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:

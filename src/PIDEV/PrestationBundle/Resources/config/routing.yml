@@ -1,0 +1,3 @@
+pidev_prestation_homepage:
+    path:     /
+    defaults: { _controller: PIDEVPrestationBundle:Default:index }

@@ -14,5 +14,9 @@ class DefaultController extends Controller
     {
         return $this->render('PIDEVTemplateBundle:Default:layout.html.twig');
     }
+    public function FrontAction()
+    {
+        return $this->render('PIDEVTemplateBundle:Default:layoutFront.html.twig');
+    }
 
 }

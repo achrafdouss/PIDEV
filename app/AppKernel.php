@@ -17,6 +17,12 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new PIDEV\TemplateBundle\PIDEVTemplateBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new PIDEV\UserBundle\PIDEVUserBundle(),
+            new PIDEV\PrestationBundle\PIDEVPrestationBundle(),
+            new PIDEV\ProduitBundle\PIDEVProduitBundle(),
+            new PIDEV\EvenementBundle\PIDEVEvenementBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

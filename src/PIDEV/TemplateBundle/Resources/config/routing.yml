@@ -4,3 +4,6 @@ pidev_template_homepage:
 layout:
     path:     /layout
     defaults: { _controller: PIDEVTemplateBundle:Default:Dashboard }
+Front:
+    path:     /front
+    defaults: { _controller: PIDEVTemplateBundle:Default:Front }
